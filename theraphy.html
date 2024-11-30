@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Therapy Slot Selector</title>
+  <link rel="stylesheet" href="styles2.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <div class="header">
+      <button class="back-button">←</button>
+      <h2>Please select therapy mode</h2>
+    </div>
+
+    <!-- Therapy Modes -->
+    <div class="therapy-modes">
+      <div class="mode" id="mode-in-person">
+        <span>🏠</span>
+        <p>In-person</p>
+      </div>
+      <div class="mode" id="mode-video">
+        <span>🎥</span>
+        <p>Video</p>
+      </div>
+      <div class="mode" id="mode-call">
+        <span>📞</span>
+        <p>Call</p>
+      </div>
+    </div>
+
+    <!-- Address -->
+    <div class="address">
+      <p>📍 3rd Floor, A2, 35, Block A2, Delhi</p>
+    </div>
+
+    <!-- Slot and Date Selection -->
+    <div class="selection">
+      <!-- Slot Section -->
+      <div class="slots" id="slots-section">
+        <h3>Select slots</h3>
+        <div class="slot-group" id="slot-group">
+          <!-- Dynamic slots will be displayed here -->
+        </div>
+      </div>
+
+     <div class="calendar">
+  <h3>Available Dates</h3>
+  <div class="calendar-header">
+    <button class="prev-month">◀</button>
+    <p>2024 Aug</p>
+    <button class="next-month">▶</button>
+  </div>
+  <div class="calendar-grid">
+    <div class="day">MON</div>
+    <div class="day">TUE</div>
+    <div class="day">WED</div>
+    <div class="day">THU</div>
+    <div class="day">FRI</div>
+    <div class="day">SAT</div>
+    <div class="day">SUN</div>
+    
+    <!-- Dates -->
+    <div class="date" data-day="01">01</div>
+    <div class="date" data-day="02">02</div>
+    <div class="date" data-day="03">03</div>
+    <div class="date" data-day="04">04</div>
+    <div class="date" data-day="05">05</div>
+    <div class="date" data-day="06">06</div>
+    <div class="date" data-day="07">07</div>
+    <div class="date" data-day="08">08</div>
+    <div class="date" data-day="09">09</div>
+    <div class="date" data-day="10">10</div>
+    <div class="date" data-day="11">11</div>
+    <div class="date" data-day="12">12</div>
+    <div class="date" data-day="13">13</div>
+    <div class="date" data-day="14">14</div>
+    <div class="date" data-day="15">15</div>
+    <div class="date" data-day="16">16</div>
+    <div class="date" data-day="17">17</div>
+    <div class="date" data-day="18">18</div>
+    <div class="date" data-day="19">19</div>
+    <div class="date" data-day="20">20</div>
+    <div class="date" data-day="21">21</div>
+    <div class="date" data-day="22">22</div>
+    <div class="date" data-day="23">23</div>
+    <div class="date" data-day="24">24</div>
+    <div class="date" data-day="25">25</div>
+    <div class="date" data-day="26">26</div>
+    <div class="date" data-day="27">27</div>
+    <div class="date" data-day="28">28</div>
+    <div class="date" data-day="29">29</div>
+    <div class="date" data-day="30">30</div>
+    <div class="date" data-day="31">31</div>
+  </div>
+</div>
+
+
+    <!-- Proceed Button -->
+    <button class="proceed-btn" id="proceed-btn" onclick="goHome()">Proceed</button>
+  </div>
+
+  <script src="script2.js"></script>
+</body>
+</html>

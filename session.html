@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Available Sessions</title>
+  <link rel="stylesheet" href="styles1.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Back Button -->
+    <button class="back-button" onclick="goBack()">← Available Sessions</button>
+
+    <!-- Info Box -->
+    <div class="info-box" id="info-box">
+      <p>Click on the duration to see the pricing details</p>
+      <button class="close-btn" onclick="closeInfoBox()">✕</button>
+    </div>
+
+    <!-- Session Cards -->
+    <div class="session-cards">
+      <!-- Group Therapy -->
+      <div class="card" id="group-therapy">
+        <h3>₹<span class="price" id="group-price">3200</span> / session</h3>
+        <div class="duration">
+          <button class="duration-btn" onclick="updatePrice('group', 45)">45 mins</button>
+          <button class="duration-btn" onclick="updatePrice('group', 60)">60 mins</button>
+          <button class="duration-btn" onclick="updatePrice('group', 90)">90 mins</button>
+        </div>
+        <h4>Group Therapy</h4>
+        <ul>
+          <li>Joint Evaluation</li>
+          <li>Communication Exercises</li>
+          <li>Conflict Resolution</li>
+          <li>Goal Setting</li>
+          <li>Follow-up plan</li>
+        </ul>
+        <button class="proceed-btn" onclick="proceed('group')">Proceed</button>
+      </div>
+
+      <!-- Individual Therapy -->
+      <div class="card" id="individual-therapy">
+        <h3>₹<span class="price" id="individual-price">3200</span> / session</h3>
+        <div class="duration">
+          <button class="duration-btn" onclick="updatePrice('individual', 45)">45 mins</button>
+          <button class="duration-btn" onclick="updatePrice('individual', 60)">60 mins</button>
+          <button class="duration-btn" onclick="updatePrice('individual', 90)">90 mins</button>
+        </div>
+        <h4>Individual Therapy</h4>
+        <ul>
+          <li>Joint Evaluation</li>
+          <li>Communication Exercises</li>
+          <li>Conflict Resolution</li>
+          <li>Goal Setting</li>
+          <li>Follow-up plan</li>
+        </ul>
+        <button class="proceed-btn" onclick="proceed('individual')">Proceed</button>
+      </div>
+
+      <!-- Couple Therapy -->
+      <div class="card" id="couple-therapy">
+        <h3>₹<span class="price" id="couple-price">3200</span> / session</h3>
+        <div class="duration">
+          <button class="duration-btn" onclick="updatePrice('couple', 45)">45 mins</button>
+          <button class="duration-btn" onclick="updatePrice('couple', 60)">60 mins</button>
+          <button class="duration-btn" onclick="updatePrice('couple', 90)">90 mins</button>
+        </div>
+        <h4>Couple Therapy</h4>
+        <ul>
+          <li>Joint Evaluation</li>
+          <li>Communication Exercises</li>
+          <li>Conflict Resolution</li>
+          <li>Goal Setting</li>
+          <li>Follow-up plan</li>
+        </ul>
+        <button class="proceed-btn" onclick="proceed('couple')">Proceed</button>
+      </div>
+    </div>
+  </div>
+
+  <script src="script1.js"></script>
+</body>
+</html>

@@ -1,0 +1,56 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>User Information</title>
+  <link rel="stylesheet" href="styles3.css">
+</head>
+<body>
+
+  <div class="container">
+    <div class="header">
+      <button class="back-button" onclick="window.history.back()">←</button>
+      <h2>Selected Therapy</h2>
+    </div>
+
+    <!-- Display Selected Therapy Details -->
+    <div class="selected-details">
+      <p><strong>Therapy Type:</strong> <span id="selected-therapy">Group Therapy</span></p>
+      <p><strong>Session Duration:</strong> <span id="selected-duration">45 mins</span></p>
+      <p><strong>Date:</strong> <span id="selected-date">2024-12-01</span></p>
+      <p><strong>Time Slot:</strong> <span id="selected-time">11:00 AM</span></p>
+      <button class="change-button" onclick="redirectToSlotPage()">Change</button>
+    </div>
+
+    <form id="user-info-form">
+      <!-- User Information Fields -->
+      <label for="first-name">First Name:</label>
+      <input type="text" id="first-name" name="first-name" required>
+
+      <label for="last-name">Last Name:</label>
+      <input type="text" id="last-name" name="last-name" required>
+
+      <label for="mobile-number">Mobile Number:</label>
+      <input type="tel" id="mobile-number" name="mobile-number" required>
+
+      <label for="referral">Have you been referred by your employer?</label>
+      <select id="referral" name="referral" onchange="toggleCompanyIdField()">
+        <option value="no">No</option>
+        <option value="yes">Yes</option>
+      </select>
+
+      <div id="company-id-field" style="display:none;">
+        <label for="company-id">Company ID:</label>
+        <input type="text" id="company-id" name="company-id">
+        <button type="button" onclick="verifyCompanyId()">Verify</button>
+        <span id="verification-status"></span>
+      </div>
+
+      <button type="submit" id="book-session-btn" disabled>Book Session</button>
+    </form>
+  </div>
+
+  <script src="script3.js"></script>
+</body>
+</html>

@@ -1,0 +1,58 @@
+/* Confirmation Page Styles */
+.confirmation-container {
+  max-width: 600px;
+  margin: 50px auto;
+  padding: 20px;
+  text-align: center;
+  background-color: #f9fafe;
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.confirmation-container h1 {
+  font-size: 36px;
+  color: #007bff;
+  margin-bottom: 20px;
+}
+
+.confirmation-container .congratulations {
+  font-size: 20px;
+  color: #333;
+  margin-bottom: 20px;
+}
+
+.confirmation-container .instructions {
+  text-align: left;
+  margin-top: 20px;
+}
+
+.confirmation-container .instructions h3 {
+  font-size: 18px;
+  margin-bottom: 10px;
+}
+
+.confirmation-container .instructions ul {
+  list-style: disc;
+  margin-left: 20px;
+}
+
+.confirmation-container .instructions ul li {
+  margin-bottom: 10px;
+  font-size: 16px;
+}
+
+.home-button {
+  background-color: #007bff;
+  color: white;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-size: 16px;
+  cursor: pointer;
+  margin-top: 20px;
+}
+
+.home-button:hover {
+  background-color: #0056b3;
+}

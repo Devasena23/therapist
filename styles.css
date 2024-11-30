@@ -1,0 +1,326 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f9fafe;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+/* Header */
+.header {
+  padding: 20px;
+  background-color: #0066ff;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header .back-button {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.header .back-button:hover {
+  text-decoration: underline;
+}
+
+/* Profile Section */
+.profile-card {
+  text-align: center;
+  background: #e6f3ff;
+  padding: 30px 20px;
+  position: relative;
+}
+
+.profile-card .profile-image {
+  width: 120px;
+  height: 120px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 4px solid #ffffff;
+  margin-bottom: 10px;
+}
+
+.profile-card .verified-icon {
+  position: absolute;
+  top: 110px;
+  right: 50%;
+  transform: translateX(60px);
+  background-color: #fff;
+  border: 2px solid #007BFF;
+  color: #007BFF;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 12px;
+}
+
+.profile-card h2 {
+  font-size: 22px;
+  font-weight: 600;
+  margin: 5px 0;
+}
+
+.profile-card .role {
+  font-size: 14px;
+  font-weight: 500;
+  color: #555;
+  margin: 5px 0;
+}
+
+.profile-card .experience {
+  font-size: 14px;
+  margin: 10px 0;
+  color: #007BFF;
+}
+
+.profile-card .price {
+  font-size: 16px;
+  font-weight: 600;
+}
+
+.book-button {
+  margin-top: 20px;
+  display: inline-block;
+  background-color: #007BFF;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.book-button:hover {
+  background-color: #0056b3;
+}
+
+/* About Me Section */
+.about-me {
+  padding: 20px;
+}
+
+.about-me h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.about-me p {
+  font-size: 14px;
+  color: #555;
+  margin-bottom: 10px;
+}
+
+.about-me .read-more-button {
+  background-color: transparent;
+  border: none;
+  color: #007BFF;
+  font-size: 14px;
+  font-weight: 500;
+  cursor: pointer;
+  transition: color 0.3s ease;
+}
+
+.about-me .read-more-button:hover {
+  color: #0056b3;
+}
+
+/* Credentials Section */
+.credentials {
+  padding: 20px;
+}
+
+.credentials h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.credentials ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+}
+
+.credentials li {
+  font-size: 14px;
+  padding: 5px 0;
+  display: flex;
+  align-items: center;
+}
+
+.credentials li::before {
+  content: "✔";
+  color: #007BFF;
+  font-size: 14px;
+  margin-right: 8px;
+}
+
+/* Availability Section */
+.availability {
+  padding: 20px;
+  border-top: 1px solid #f0f0f0;
+}
+
+.availability h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.availability .availability-button {
+  background-color: #f0f8ff;
+  color: #007BFF;
+  border: 1px solid #007BFF;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-right: 10px;
+  margin-bottom: 10px;
+  transition: all 0.3s ease;
+}
+
+.availability .availability-button:hover {
+  background-color: #007BFF;
+  color: #ffffff;
+}
+
+/* Therapy Section */
+.therapy {
+  padding: 20px;
+}
+
+.therapy h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.therapy .categories {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.categories span {
+  background-color: #f0f8ff;
+  color: #007BFF;
+  padding: 8px 15px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 500;
+  border: 1px solid #007BFF;
+  transition: all 0.3s ease;
+}
+
+.categories span:hover {
+  background-color: #007BFF;
+  color: #ffffff;
+}
+
+/* Testimonials Section */
+.testimonials {
+  padding: 20px;
+}
+
+.testimonials h3 {
+  font-size: 18px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.testimonials .testimonial-card {
+  background-color: #f9f9f9;
+  padding: 15px;
+  border-radius: 10px;
+  margin: 10px 0;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  font-size: 14px;
+}
+
+.testimonials .testimonial-card p {
+  font-style: italic;
+  color: #555;
+}
+
+.testimonials .testimonial-card span {
+  font-size: 12px;
+  font-weight: 500;
+  display: block;
+  margin-top: 10px;
+  text-align: right;
+  color: #333;
+}
+
+.show-more-button {
+  background-color: #f0f8ff;
+  color: #007BFF;
+  border: 1px solid #007BFF;
+  padding: 10px 15px;
+  border-radius: 20px;
+  cursor: pointer;
+  font-weight: 500;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.show-more-button:hover {
+  background-color: #007BFF;
+  color: #ffffff;
+}
+
+/* Additional Styles for New Sections (for Booking Confirmation) */
+.confirmation-page {
+  padding: 30px;
+  text-align: center;
+  background-color: #e6f3ff;
+}
+
+.confirmation-page h1 {
+  font-size: 36px;
+  color: #007BFF;
+  font-weight: 700;
+}
+
+.confirmation-page p {
+  font-size: 18px;
+  color: #333;
+  margin: 20px 0;
+}
+
+.confirmation-page .back-home-button {
+  background-color: #007BFF;
+  color: #ffffff;
+  border: none;
+  padding: 10px 20px;
+  border-radius: 25px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+.confirmation-page .back-home-button:hover {
+  background-color: #0056b3;
+}

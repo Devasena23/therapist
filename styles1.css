@@ -1,0 +1,126 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f9fafe;
+  color: #333;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 10px;
+  text-align: center;
+}
+
+/* Back Button */
+.back-button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  font-weight: 600;
+  color: #007bff;
+  cursor: pointer;
+  text-align: left;
+  margin: 10px 20px;
+}
+
+.back-button:hover {
+  text-decoration: underline;
+}
+
+/* Info Box */
+.info-box {
+  background-color: #e6f3ff;
+  color: #007bff;
+  padding: 10px 20px;
+  border: 1px solid #007bff;
+  border-radius: 5px;
+  display: inline-block;
+  margin-bottom: 20px;
+}
+
+/* Session Cards */
+.session-cards {
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+  gap: 20px;
+}
+
+.card {
+  background: linear-gradient(135deg, #007bff, #0056b3);
+  color: #fff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  padding: 20px;
+  text-align: center;
+  width: 300px;
+  position: relative;
+}
+
+.card h3 {
+  font-size: 20px;
+  margin-bottom: 10px;
+}
+
+.card .duration {
+  margin: 10px 0;
+}
+
+.duration-btn {
+  background-color: #0056b3;
+  color: #ffffff;
+  border: 1px solid #ffffff;
+  border-radius: 20px;
+  padding: 8px 15px;
+  margin: 0 5px;
+  cursor: pointer;
+  font-size: 14px;
+}
+
+.duration-btn.active {
+  background-color: #ffffff;
+  color: #0056b3;
+  border: 1px solid #0056b3;
+}
+
+
+.duration-btn:hover {
+  background-color: #ffffff;
+  color: #0056b3;
+}
+
+.card h4 {
+  font-size: 18px;
+  margin: 15px 0;
+}
+
+.card ul {
+  list-style: none;
+  padding: 0;
+  margin: 10px 0;
+  text-align: left;
+}
+
+.card ul li {
+  font-size: 14px;
+  margin: 5px 0;
+}
+
+.proceed-btn {
+  background-color: #ffffff;
+  color: #0056b3;
+  border: none;
+  border-radius: 25px;
+  padding: 10px 20px;
+  font-weight: 600;
+  cursor: pointer;
+  margin-top: 10px;
+  transition: all 0.3s ease;
+}
+
+.proceed-btn:hover {
+  background-color: #e6f3ff;
+}

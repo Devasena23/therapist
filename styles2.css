@@ -1,0 +1,239 @@
+/* General Styles */
+body {
+  font-family: 'Poppins', sans-serif;
+  margin: 0;
+  padding: 0;
+  line-height: 1.6;
+  background-color: #f9fafe;
+  color: #333;
+}
+
+.container {
+  max-width: 800px;
+  margin: 30px auto;
+  background-color: #ffffff;
+  border-radius: 10px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+  padding: 20px;
+}
+
+/* Header */
+.header {
+  padding: 20px;
+  background-color: #0066ff;
+  color: #ffffff;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header h2 {
+  font-size: 18px;
+  margin: 0;
+}
+
+.header .back-button {
+  font-size: 16px;
+  font-weight: 500;
+  color: #ffffff;
+  background: none;
+  border: none;
+  cursor: pointer;
+}
+
+.header .back-button:hover {
+  text-decoration: underline;
+}
+
+/* Therapy Modes */
+.therapy-modes {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.therapy-modes .mode {
+  text-align: center;
+  padding: 15px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  flex: 1;
+  margin: 0 5px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  font-size: 14px;
+  color: #333;
+  background-color: #f9f9f9;
+}
+
+.therapy-modes .mode.active {
+  background-color: #0066ff;
+  color: #ffffff;
+  border-color: #0066ff;
+}
+
+.therapy-modes .mode span {
+  font-size: 20px;
+  display: block;
+  margin-bottom: 5px;
+}
+
+/* Address Section */
+.address {
+  text-align: center;
+  margin: 20px 0;
+  font-size: 14px;
+  color: #555;
+}
+
+/* Slot and Date Selection */
+.selection {
+  display: flex;
+  justify-content: space-between;
+  margin: 20px 0;
+}
+
+.slots,
+.calendar {
+  flex: 1;
+}
+
+/* Slots Section */
+.slots h3,
+.calendar h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.slots .slot-group,
+.calendar .calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 columns for each day of the week */
+  gap: 10px;
+  text-align: center;
+}
+
+.slots .slot,
+.calendar .date {
+  padding: 10px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  font-size: 14px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+.slots .slot:hover,
+.calendar .date:hover {
+  background-color: #e6f3ff;
+}
+
+.slots .slot.selected,
+.calendar .date.selected,
+.calendar .date.active {
+  background-color: #0066ff;
+  color: #ffffff;
+  border-color: #0066ff;
+}
+
+.slots .slot-note {
+  font-size: 12px;
+  color: #555;
+  margin-top: 10px;
+}
+
+/* Calendar Section */
+.calendar {
+  margin-bottom: 20px;
+}
+
+.calendar h3 {
+  font-size: 16px;
+  font-weight: 600;
+  margin-bottom: 10px;
+}
+
+.calendar .calendar-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.calendar .calendar-header button {
+  background: none;
+  border: none;
+  font-size: 16px;
+  cursor: pointer;
+  color: #007BFF;
+}
+
+.calendar .calendar-grid {
+  display: grid;
+  grid-template-columns: repeat(7, 1fr); /* 7 columns for each day of the week */
+  gap: 10px;
+  text-align: center;
+}
+
+/* Day Names (MON, TUE, etc.) */
+.calendar .day {
+  font-weight: bold;
+  color: #333;
+  padding: 10px;
+  background-color: #f9f9f9;
+  border-radius: 8px;
+}
+
+/* Date Selection */
+.calendar .date {
+  padding: 15px;
+  font-size: 14px;
+  border: 1px solid #ddd;
+  border-radius: 8px;
+  cursor: pointer;
+  background-color: #f9f9f9;
+  transition: all 0.3s ease;
+}
+
+.calendar .date:hover {
+  background-color: #e6f3ff;
+}
+
+.calendar .date.active {
+  background-color: #0066ff;
+  color: #ffffff;
+  border-color: #0066ff;
+}
+
+.calendar .date.selected {
+  background-color: #0066ff;
+  color: #ffffff;
+  border-color: #0066ff;
+}
+
+/* Proceed Button */
+.proceed-btn {
+  display: block;
+  width: 20%; /* Reduced width */
+  padding: 8px; /* Reduced padding */
+  background-color: #ccc;
+  color: #fff;
+  border: none;
+  border-radius: 15px;
+  font-weight: 600;
+  font-size: 12px; /* Reduced font size */
+  cursor: not-allowed;
+  transition: all 0.3s ease;
+  text-align: center;
+  margin: 20px auto; /* Added margin to space it from the calendar */
+height: 20px;
+}
+
+.proceed-btn.active {
+  background-color: #0066ff;
+  color: #ffffff;
+  cursor: pointer;
+}
