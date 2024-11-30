@@ -4,7 +4,7 @@ This is a web application that allows users to book therapy sessions with profes
 
 Demo Link (Staging)
 You can view the staging version of the app here:
-[**Demo Link**]((https://melodious-bubblegum-7066e2.netlify.app/))  
+[**Demo Link**](https://melodious-bubblegum-7066e2.netlify.app/)  
 
 Features
 - View therapist profiles
